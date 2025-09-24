@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Deploy to Kubernetes') {
             steps {
-                bat 'kubectl apply -f C:/Users/Krish/OneDrive\Desktop/Raagaa/Week-2/deployment.yaml'
+                bat 'kubectl apply -f C:/Users/Krish/OneDrive/Desktop/Raagaa/Week-2/deployment.yaml'
                 bat 'kubectl apply -f C:/Users/Krish/OneDrive/Desktop/Raagaa/Week-2/service.yaml'
             }
         }
