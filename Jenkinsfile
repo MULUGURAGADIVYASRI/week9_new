@@ -18,5 +18,10 @@ pipeline {
                 bat 'kubectl apply -f C:/Users/Krish/OneDrive/Desktop/Raagaa/Week-2/service.yaml'
             }
         }
+        stage(&#39;Automated UI Test&#39;) {
+steps {
+bat 'python C:/Users/Krish/OneDrive/Desktop/Raagaa/Week-2/tests/test_registration.py';
+}
+}
     }
 }
