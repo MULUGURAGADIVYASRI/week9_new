@@ -1,14 +1,15 @@
 from flask import Flask, render_template, request, redirect, url_for
 
-app = Flask(__name__)
+# Tell Flask to look for templates in the current folder
+app = Flask(__name__, template_folder='.')
 
 @app.route('/', methods=['GET', 'POST'])
 def home():
     if request.method == 'POST':
         print("Form submitted successfully!")
         print("Form Data:", request.form)
-        return "Registration successful!"  
+        return "Registration successful!"
     return render_template('register.html')
 
 if __name__ == '__main__':
-     app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=5000)
