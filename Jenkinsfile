@@ -20,7 +20,7 @@ pipeline {
         }
         stage('Automated UI Test') {
 steps {
-bat 'python C:/Users/Krish/OneDrive/Desktop/Raagaa/Week-2/tests/test_registration.py';
+bat 'python C:/Users/Krish/OneDrive/Desktop/Raagaa/Week-2/tests/test_registration_app.py';
 }
 }
     }
