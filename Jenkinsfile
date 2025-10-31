@@ -14,8 +14,8 @@ pipeline {
         }
         stage('Deploy to Kubernetes') {
             steps {
-                bat 'kubectl apply -f C:/Users/Krish/OneDrive/Desktop/Raagaa/Week-2/deployment.yaml'
-                bat 'kubectl apply -f C:/Users/Krish/OneDrive/Desktop/Raagaa/Week-2/service.yaml'
+                bat 'kubectl apply -f C:/Users/Admin/Desktop/week9_new-main/deployment.yaml'
+                bat 'kubectl apply -f C:/Users/Admin/Desktop/week9_new-main/service.yaml'
             }
         }
         stage('Automated UI Test') {
