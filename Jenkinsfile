@@ -8,8 +8,8 @@ pipeline {
         }
         stage('Push to Docker Hub') {
             steps {
-                bat 'docker tag registration:v1 ragadivyasri/registration:v1'
-                bat 'docker push ragadivyasri/registration:v1'
+                bat 'docker tag registration:v1 shravani152004/registration:v1'
+                bat 'docker push shravani152004/registration:v1'
             }
         }
         stage('Deploy to Kubernetes') {
@@ -20,7 +20,7 @@ pipeline {
         }
         stage('Automated UI Test') {
 steps {
-bat 'python C:/Users/Krish/OneDrive/Desktop/Raagaa/Week-2/tests/test_registration_app.py';
+bat 'python  C:/Users/Admin/Desktop/week9_new-main/tests/test_registration_app.py';
 }
 }
     }
