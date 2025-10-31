@@ -14,8 +14,9 @@ spec:
     spec:
       containers:
       - name: registration
-        image: ragadivyasri/registration:v1   # use your Docker Hub image
+        image: shravani152004/registration:v1   # use your Docker Hub image
         ports:
         - containerPort: 5000
+
 
 
